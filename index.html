@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>FCC | Survey Form</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+  </header>
+  <main id="main" class="main">
+    <section class="container container-fluid">
+      <form id="survey-form" action="">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age (Optional)</label>
+          <input type="number" class="form-control" id="number" placeholder="Age (optional)" min="0" max="100">
+        </div>
+        <div class="form-group">
+          <p>What is your favorite position?</p>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Options</label>
+            </div>
+            <select class="custom-select" id="dropdown">
+              <option selected>Front-end</option>
+              <option value="Backend">Backend</option>
+              <option value="DevOps">DevOps</option>
+              <option value="Data Scientist">Data Scientist</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <p>Which is your favorite Operating System?</p>
+          <label>
+            <input type="radio" name="user-recommend" value="MacOS">
+            MacOS
+          </label>
+          <label>
+            <input type="radio" name="user-recommend" value="Linux">
+            Linux
+          </label>
+          <label>
+            <input type="radio" name="user-recommend" value="Windows">
+            Windows
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Which frameworks do you like in Front-end?</p>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Reactjs" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              ReactJS
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="VueJS" id="defaultCheck2">
+            <label class="form-check-label" for="defaultCheck2">
+              VueJS
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Angular" id="defaultCheck2">
+            <label class="form-check-label" for="defaultCheck2">
+              Angular
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Any recommendation or question</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+        <button id="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <a href="https://twitter.com/sntwandy" target="_blank">
+      <div class="container footer-container">
+        <span>Developed by: </span>
+        <figure class="footer-twitter-logo-container">
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsdweg.files.wordpress.com%2F2016%2F09%2Fl62697-new-twitter-logo-49466.png&f=1&nofb=1" alt="Twitter logo">
+        </figure>
+        <span>@sntwandy</span>
+      </div>
+    </a>
+  </footer>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
